@@ -1,0 +1,49 @@
+.boxText {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.flavour {
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: -10px;
+}
+
+.menuButton {
+	border: 0px solid #999;
+	background-color: white;
+	font-size: 40px;
+	outline: 0;
+	color: black;
+}
+
+.rulesArea {
+	text-align: center;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.sectionBox {
+	border: 1px solid #999;
+	width: 600px;
+	margin: 0 auto;
+	text-align: left;
+	margin-top: 1px;
+}
+
+.sectionBox--top {
+	margin-top: 20px;
+}
+
+.sectionTitle {
+	text-align: left;
+	margin-left: 10px;
+	margin-top: 0px;
+	margin-bottom: 5px;
+}

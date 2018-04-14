@@ -1,0 +1,56 @@
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.menu {
+	text-align: center;
+	position: relative;
+	width: 70%;
+  margin: 0 auto;
+  margin-top: 3%;
+}
+
+.menu__button {
+	border: 0px solid #999;
+	background-color: white;
+	font-size: 40px;
+	outline: 0;
+	color: black;
+}
+
+.menu__button:hover {
+	text-shadow: 3px 3px rgba(0,0,0,0.2);
+}
+
+.menu__credit {
+	font-size: 10px;
+	position: fixed;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	text-shadow: none;
+	background-color: white;
+}
+
+.menu__img--shrine {
+	width: 300px;
+	margin-top: -70px;
+}
+
+.menu__title{
+	font-size: 80px;
+	margin-top: 10px;
+}
+
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+
+}
+

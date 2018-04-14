@@ -1,0 +1,44 @@
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.optionsMenu {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  margin-top: 10%;
+  text-align: center;
+}
+
+.optionsMenu__button {
+	border: 0px solid #999;
+	background-color: white;
+	font-size: 40px;
+	outline: 0;
+	margin-top: 5px;
+	color: black;
+}
+
+.optionsMenu__button--return {
+	margin-top: 2%;
+}
+
+.optionsMenu__button--minTurnTime {
+	font-size: 18px;
+
+}
+
+.optionsMenu__button:hover {
+	text-shadow: 3px 3px rgba(0,0,0,0.2);
+}
+
+.optionsMenu__keyboardInfo {
+	border: 1px solid #999;
+	width: 600px;
+	margin: 0 auto;
+	margin-top: 5px;
+}

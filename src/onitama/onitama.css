@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css?family=Patua+One');
+* {
+  outline: 0;
+}
+
+.blueArrowAndMoves {
+  display: table;
+  width: 220px;
+  float: left;
+  margin-top: 22px;
+  margin-left: 98px;
+}
+
+.blueArrowAndMoves__arrow {
+  float: left;
+  margin-left: 12px;
+  margin-top: 32px;
+}
+
+.blueArrowAndMoves__movesAligner {
+  float: left;
+}
+
+.board {
+  float: left;
+  margin-left: 1.5px;
+  margin-right: none;
+  width: 340px;
+}
+
+.board__turnInfo {
+  text-align: center;
+  font-size: 18.25px;
+  font-family: Patua One;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.menuReturn {
+  text-align: center;
+}
+
+.menuReturn__btn {
+  border: 0px solid #999;
+  background-color: white;
+  font-size: 30px;
+  outline: 0;
+  color: black;
+}
+
+.menuReturn__btn:hover {
+  text-shadow: 3px 3px rgba(0,0,0,0.2);
+}
+
+.neutralBand {
+  width: 920px;
+  height: 180px;
+  margin-top: 10px;
+  float: left;
+}
+
+.neutralBand--gameOver {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.neutralBand__neutralToBlue {
+  float: left;
+}
+
+.neutralBand__neutralToRed {
+  margin-right: 12px;
+  margin-left: 318px;
+  float: left;
+}
+
+.noSelectOni {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+  /*margin-top: 3%;*/
+}
+
+.playArea {
+  border: 1px solid #999;
+  min-width: 920px;
+  max-width: 920px;
+  min-height: 600px;
+  max-height: 600px;
+  margin: 0px auto;
+}
+
+.playerOneCards {
+  float: left;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.playerOneCards--timerOff {
+  margin-top: 44px;
+}
+
+.playerTwoCards {
+  float: right;
+  margin-right: 10px;
+}
+
+.playerTwoCards--timerOff {
+  margin-top: 44px;
+}
+
+.redArrowAndMoves {
+  display: table;
+  width: 220px;
+  float: left;
+  margin-top: 22px;
+}
+
+.redArrowAndMoves__arrow {
+  float: right;
+  margin-right: 12px;
+  margin-top: 32px;
+}
+
+.readArrowAndMoves__movesAligner {
+  float: right;
+}
+
+.timer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 39px;
+}
+
+
+
+/*Used in board.js*/
+.board-row:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+/*Used in minisquare.js*/
+.move {
+  border: 1px solid #999;
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  height: 25px;
+  width: 25px;
+}
+
+.move--blue {
+  background: #4A90E2;
+}
+
+.move--mini {
+  background: #6666ff;
+}
+
+.move--red {
+  background: #D0021B;
+}
+
+.miniSquare {
+  border: 1px solid #999;
+  float: left;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  height: 25px;
+  width: 25px;
+}
+
+.miniSquare--piece {
+  background: #000;
+}
+
+
+
+/*Used in SpiritCard.js*/
+.spiritCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background: #fff;
+  font-weight: bold;
+  font-size: 24px;
+  clear: both;
+  content: "";
+  display: table;
+  margin-top: 15px;
+  color: black;
+}
+
+.spiritCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.spiritCard--keyHighlighted {
+  border-color: black;
+  margin-top: 15px;
+  /*No color black?*/
+}
+
+.spiritCard--selected {
+  background: #b3b3b3;
+  /*No color black?*/
+}
+
+.spiritCard__circle {
+  border-radius: 50%;
+  border: 1px solid #999;
+  width: 100px;
+  height: 100px;
+  font-size: 80px;
+  line-height: 100px;
+  text-align: center;
+  font-weight: normal;
+  color: black;
+}
+
+.spiritCard__leftSide {
+  float: left;
+  margin: 5px;
+}
+
+.spiritCard__rightSide {
+  margin: 5px;
+  float: right;
+}
+
+
+/*Used in square.js*/
+.square {
+  background: #fff;
+  border: 1px solid #999;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 34px;
+  height: 68px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 68px;
+}
+
+.square__imgPiece {
+  position: relative;
+  z-index: 0;
+}
+
+.square__imgOverlappingIcon {
+  z-index: 2;
+  top: -72px;
+  position: relative;
+}
+
+.square--highlighted {
+  background: #6666ff; /*purple*/
+  opacity: .5;
+}
+
+.square--keyboardSelected {
+  border-color: black;
+  border-width: 2px;
+}
+
+.square--selected {
+  background: #b3b3b3; /*grey*/
+}
+
+.square--shintoShrine {
+  background-image: url('./images/shintoShrine.png');
+  background-image-width: 64px;
+  background-image-height: 64px;
+}
