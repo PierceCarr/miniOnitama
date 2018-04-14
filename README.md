@@ -24,7 +24,7 @@ Have fun!
 <h2>Image Info and Credits</h2>
 All the icons used in this game were taken from the site game-icons.net.
 <ul>
-  <li>Cancel icon by <a href="http://game-icons.net/sbed/originals/cancel.html>sbed</a></li>
+  <li>Cancel icon by <a href="http://game-icons.net/sbed/originals/cancel.html">sbed</a></li>
   <li>High kick icon by <a href="http://game-icons.net/delapouite/originals/high-kick.html">Delapouite</a></li>
   <li>Puppet icon by <a href="http://game-icons.net/lorc/originals/puppet.html">Lorc</a></li>
   <li>Punch icon by <a href="http://game-icons.net/lorc/originals/punch.html">Lorc</a></li>
