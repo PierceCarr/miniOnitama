@@ -30,4 +30,4 @@ All the icons used in this game were taken from the site game-icons.net.
   <li>Punch icon by <a href="http://game-icons.net/lorc/originals/punch.html">Lorc</a></li>
   <li>Shinto shrine icon by <a href="http://game-icons.net/delapouite/originals/shinto-shrine.html">Delapouite</a></li>
 </ul>
-    All of the above icons were used under CC BY 3.0
+    All of the above icons are used under the <a href="https://creativecommons.org/licenses/by/3.0/">CC BY 3.0</a> licence.
