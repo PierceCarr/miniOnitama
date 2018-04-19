@@ -4,7 +4,7 @@ Shimpei Sato or any of Onitama's publishers, including minimalGames and Arcane W
 
 Onitama is a highly rated two player abstract game about onmyōdō practitioners, called onmyos,
 competing to be leaders of the legendary shrine of Onitama. To accomplish this, they possess themselves and their puppets 
-with various animal spirits known as shikigami. The game is commonly described as 'five minute chess' and, at the time of writing, ranks as the 7th highest rated abstract game of all time according to board game database, boardgamegeek.com 
+with various animal spirits. The game is commonly described as 'five minute chess' and, at the time of writing, ranks as the 7th highest rated abstract game of all time according to board game database, boardgamegeek.com 
 (for comparison, chess comes in at lowley 17th place).
 
 As a way to hone my React and Javascript skills
