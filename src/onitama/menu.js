@@ -31,28 +31,71 @@ class Menu extends React.Component {
 	}
 
 	handleChangeMinTurnTime(event) {
-		this.setState({outOfTimeTime: event.target.value});
+		const isInputAllDigits = 
+			this.checkIfInputIsDigits(event.target.value);
+		if(isInputAllDigits) {
+			this.setState({outOfTimeTime: event.target.value});
+		} else {
+			const DEFAULT = 0;
+			this.setState({outOfTimeTime: DEFAULT});
+		}
+		
 	}
 
 	handleChangeMinute(event) {
 		const SECONDS_SLOT = 1; //[minutes:seconds], space '1' = seconds
 		const seconds = this.state.blueTime[SECONDS_SLOT];
-		this.setState({blueTime: [event.target.value, seconds]});
-		this.setState({redTime: [event.target.value, seconds]});
+
+		const isInputAllDigits = 
+			this.checkIfInputIsDigits(event.target.value);
+		
+		if(isInputAllDigits) {
+			this.setState({blueTime: [event.target.value, seconds]});
+			this.setState({redTime: [event.target.value, seconds]});
+		} else {
+
+			const DEFAULT_MINUTES = 5;
+
+			this.setState({blueTime: [DEFAULT_MINUTES, seconds]});
+			this.setState({redTime: [DEFAULT_MINUTES, seconds]});
+		}
 	}
 
 	handleChangeSecond(event) {
 		const MINUTES_SLOT = 0; //[minutes:seconds], space '0' = minutes
 		const minutes = this.state.blueTime[MINUTES_SLOT];
-		this.setState({blueTime: [minutes, event.target.value]});
-		this.setState({redTime: [minutes, event.target.value]});
+
+		const isInputAllDigits = 
+			this.checkIfInputIsDigits(event.target.value);
+		
+		if(isInputAllDigits) {
+
+			this.setState({blueTime: [minutes, event.target.value]});
+			this.setState({redTime: [minutes, event.target.value]});
+		} else {
+
+			const DEFAULT_SECONDS = 0;
+
+			this.setState({blueTime: [minutes, DEFAULT_SECONDS]});
+			this.setState({redTime: [minutes, DEFAULT_SECONDS]});
+		}
+	}	
+
+	checkIfInputIsDigits(input) {
+		let allInputIsAnASCIIDigit = true;
+
+		for(let i = 0; i < input.length; i++) {
+			const ZERO_IN_ASCII = 48;
+			const NINE_IN_ASCII = 57;
+
+			if(input.charCodeAt(i) < ZERO_IN_ASCII ||
+			   input.charCodeAt(i) > NINE_IN_ASCII) {
+				return false;
+			}
+		}
+
+		return allInputIsAnASCIIDigit;
 	}
-
-	// checkIfInputIsDigits(input) {
-	// 	let isDigits = false;
-
-	// 	return isDigits;
-	// }
 
 	
 

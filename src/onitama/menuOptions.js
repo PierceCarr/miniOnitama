@@ -84,12 +84,12 @@ function MenuOptions(props) {
 	const BLUE_OPTIONS = true; //May have seperate red options later
 	const optionsScreen = 
 		<div className="optionsMenu">
-			<button zindex="-1" className="optionsMenu__button"
+			<button className="optionsMenu__button"
 			 onClick={() => props.toggleKeyboardControls(BLUE_OPTIONS)}>
 				{"Blue keyboard: " + getKeyboardState(isBlueUsingKeyboard)}
 			</button>
 			<p/>
-			<button zindex="-1" className="optionsMenu__button"
+			<button className="optionsMenu__button"
 				onClick={() => props.toggleKeyboardControls(!BLUE_OPTIONS)}>
 				{"Red keyboard: " + getKeyboardState(isRedUsingKeyboard)}
 			</button>
@@ -113,8 +113,14 @@ function MenuOptions(props) {
 
 MenuOptions.propTypes = {
 	areTurnTimersInUse: PropTypes.bool,
-	blueMinutes: PropTypes.number,
-	blueSeconds: PropTypes.number,
+	blueMinutes: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number
+		]),
+	blueSeconds: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number
+		]),
 	handleChangeMinTurnTime: PropTypes.func,
 	handleChangeMinute: PropTypes.func,
 	handleChangeSecond: PropTypes.func,
@@ -122,7 +128,10 @@ MenuOptions.propTypes = {
 	isBlueUsingKeyboard: PropTypes.bool,
 	isRedUsingKeyboard: PropTypes.bool,
 	isThereMinTurnTime: PropTypes.bool,
-	minTurnTime: PropTypes.number,
+	minTurnTime: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number
+		]),
 	setMinTurnTime: PropTypes.func,
 	toggleKeyboardControls: PropTypes.func,
 	toggleMinTurnTime: PropTypes.func,

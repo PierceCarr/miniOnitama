@@ -1357,9 +1357,18 @@ Game.propTypes = {
 	isBlueUsingKeyboard: PropTypes.bool,
 	isRedUsingKeyboard: PropTypes.bool,
 	isThereMinTurnTime: PropTypes.bool,
-	minTurnTime: PropTypes.number,
-	turnMinutes: PropTypes.number,
-	turnSeconds: PropTypes.number
+	minTurnTime: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number
+		]),
+	turnMinutes: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number
+		]),
+	turnSeconds: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.number
+		])
 }
 
 export default Game;
