@@ -19,7 +19,13 @@ While my version may not have the tactile appeal of a physical version, it has s
 <li>You don't have to manually rotate cards every turn</li>
 </ol>
 
+<a href="piercecarruthers.com/onitama">
+  You can play it right here!
+</a>
+
 Have fun!
+
+
 <h2>Image Info and Credits</h2>
 All the icons used in this game were taken from the site game-icons.net.
 <ul>
