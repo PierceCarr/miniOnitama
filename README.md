@@ -19,7 +19,7 @@ While my version may not have the tactile appeal of a physical version, it has s
 <li>You don't have to manually rotate cards every turn</li>
 </ol>
 
-<a href="piercecarruthers.com/onitama">
+<a href="http://piercecarruthers.com/onitama">
   You can play it right here!
 </a>
 
